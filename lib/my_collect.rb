@@ -6,6 +6,7 @@ def my_collect(collection)
       new_collection << yield(collection[i])
       i += 1
     end
+    new_collection
   else
     "Hey no block was given!"
   end
